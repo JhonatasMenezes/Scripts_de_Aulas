@@ -1,4 +1,4 @@
-// another grade average
+// another grade.average
 // algoritmo que caucula a média de um aluno com base em duas notas
 Algoritmo "Média_Nota"
    Var
