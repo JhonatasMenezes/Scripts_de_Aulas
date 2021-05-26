@@ -1,5 +1,4 @@
 estacao = input('Digite a estação do ano: ')
-
 if estacao == 'verão':
     print('Cuidado com o Sol!')
 elif estacao == 'primavera':
