@@ -1,18 +1,19 @@
-// algoritmo que caucula a mÈdia de um aluno com base em duas notas
-Algoritmo "MÈdia_Nota"
+// another grade average
+// algoritmo que caucula a m√©dia de um aluno com base em duas notas
+Algoritmo "M√©dia_Nota"
    Var
-      //definiÁ„o das vari·veis
+      //defini√ß√£o das vari√°veis
       nota1, nota2, media: real
 Inicio
-    //pede as notas do aluno e armazena nas vari·veis
+    //pede as notas do aluno e armazena nas vari√°veis
     escreva("Digite a primeira nota do aluno: ")
     leia(nota1)
     escreva("Digite a segunda nota do aluno: ")
     leia(nota2)
-    //calcula a mÈdia entre duas notas e mostra na tela
+    //calcula a m√©dia entre duas notas e mostra na tela
     media <- (nota1 + nota2) / 2
-    escreval("A mÈdia do aluno È: ", media)
-    // verifica a mÈdiae informa se o aluno foi aprovado ou reprovado
+    escreval("A m√©dia do aluno √©: ", media)
+    // verifica a m√©diae informa se o aluno foi aprovado ou reprovado
     se (media >= 6) entao
        escreva("O aluno foi aprovado!")
     senao
