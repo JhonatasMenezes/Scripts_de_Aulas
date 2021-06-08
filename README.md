@@ -1,2 +1,2 @@
-# Testes_Python_e_Visualg
-Primeiros testes enquanto aprendendo.
+# Testes de Aula
+Primeiros testes enquanto aprendendo. 
