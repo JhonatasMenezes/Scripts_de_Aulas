@@ -9,6 +9,6 @@
     print('a² = {}'.format(n1**2))
     print('b³ = {}'.format(n2**3))
     print('{} / {} = x'.format((n1**2),(n2**3)))
-  #exibição do resulado na tela
+  #exibição do resulado na tela :)
   print('Com base nas informações o valor de x é {:.4}'.format((n1**2) / (n2**3)))
 
