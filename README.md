@@ -1,2 +1,2 @@
 # Testes de Aula
-Primeiros testes enquanto aprendendo. 
+Alguns testes enquanto aprendendo. 
