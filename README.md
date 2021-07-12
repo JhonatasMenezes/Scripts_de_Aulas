@@ -1,2 +1,2 @@
 # Testes de Aula
-Alguns testes enquanto aprendendo. 
+Alguns testes de códigos e scripts enquanto aprendendo. 
