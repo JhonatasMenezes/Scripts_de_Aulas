@@ -1,0 +1,49 @@
+-- EXCEPTION PROGRAMAÇÃO --
+-- DUP_VAL_ON_INDEX
+-- Chave duplicada
+
+-- INVALID_CURSOR
+-- Operação ilrgal com cursor
+
+-- INVALID_NUMBER
+-- conversão inválida p/numeric
+
+-- LOGIN_DENIED
+-- usuário/senha inválido(a)
+
+-- NO_DATA_FOUND
+-- nenhuma linha retornada
+
+-- NO_LOGGED_ON
+-- usuário não conectado
+
+-- OTHERS 
+-- erro não declarado em exceptions
+
+-- PROGRAM_ERROR
+-- problema interno
+
+-- STORAGE_ERROR
+-- falta de memória
+
+-- TIMEOUT_ON_RESOURCE
+-- tempo de espera
+
+
+
+-- EXCEPTION TRIGGER DE DATABASE --
+-- TRANSACTION_BACKED_OUT
+-- volta atrás uma transação
+
+-- VALUE_ERROR
+-- erro conversão, expressão
+
+-- ZERO_DIVIDE
+-- divisão por zero
+
+-- ERROS CONHECIDOS PELA ORACLE
+
+
+
+-- RAISE APLICATION ERROR 
+-- erros de regra de negócio

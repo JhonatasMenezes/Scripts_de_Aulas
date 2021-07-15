@@ -1,0 +1,53 @@
+-- UTL_FILE
+-- UTL_FILE WRITE ( Escrever )
+
+DECLARE
+V_LINHA VARCHAR2(2000):= '';
+V_ARQUIVO UTL_FILE.FILE_TYPE;
+
+BEGIN
+V_ARQUIVO := utl_file.fopen('DIR_UTL', 'ARQUIVO.TXT','W');
+ 
+ FOR i IN 1..5 LOOP
+ 
+ V_LINHA :='LINHA'|| i || '!!';
+ 
+ utl_file.put_line(V_ARQUIVO, V_LINHA);
+END LOOP;
+
+utl_file.fclose(V_ARQUIVO);
+
+END;
+
+
+-- UTL_FILE READ ( ler )
+
+DECLARE 
+ARQUIVO_LER               UTL_FILE.FILE_TYPE;
+LINHA                     VARCHAR2(100);
+
+
+BEGIN
+ARQUIVO_LER := UTL_FILE.fopen('DIR_UTL','ARQUIVO.TXT','R');
+    LOOP
+        utl_file.get_line(ARQUIVO_LER, LINHA);
+    -- MANIPULAÇÃO DA LINHA LIDA
+        DBMS_OUTPUT.put_line(LINHA);
+
+    END LOOP;
+    
+    UTL_FILE.FCLOSE(ARQUIVO_LER);
+    DBMS_OUTPUT.put_line('ARQUIVO PROCESSADO COM SUCESSO.');
+    
+EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+        UTL_FILE.FCLOSE(ARQUIVO_LER);
+        COMMIT;
+    WHEN UTL_FILE.INVALID_PATH THEN
+        DBMS_OUTPUT.put_line('DIRETÓRIO INVALIDO');
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.put_line('PROBLEMAS NA LEITURA DO ARQUIVO');
+        UTL_FILE.FCLOSE(ARQUIVO_LER);
+    
+    
+END;
