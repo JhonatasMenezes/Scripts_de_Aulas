@@ -3,7 +3,7 @@
 -- Chave duplicada
 
 -- INVALID_CURSOR
--- Operação ilrgal com cursor
+-- Operação ilegal com cursor
 
 -- INVALID_NUMBER
 -- conversão inválida p/numeric
@@ -42,7 +42,6 @@
 -- divisão por zero
 
 -- ERROS CONHECIDOS PELA ORACLE
-
 
 
 -- RAISE APLICATION ERROR 
