@@ -12,7 +12,7 @@ update = s.find('div',class_='BNeawe').text
 class MinhaGUI:
     def __init__(self):
         self.main_window = tk.Tk()
-        self.main_window.minsize(60,80)
+        self.main_window.minsize(60,50)
         self.main_window.title('Wheater Today!')
         self.label1 = tk.Label(self.main_window,text= '   Olá Jhonatas, essa é previsão do tempo hoje!   ')
         self.label2 = tk.Label(self.main_window,text= update)
