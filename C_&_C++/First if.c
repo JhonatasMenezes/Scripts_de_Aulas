@@ -7,7 +7,13 @@ int main (){
     scanf("%d", &opcao);
 
     if (opcao > 0){
-        printf("\nNúmero positivo!\n");
+        
+        if ((opcao%2) == 0){
+            printf("\nNúmero positivo e Par!\n");
+        }
+        else{
+            printf("\nNúmero positivo e Ímpar!\n");
+        }
     }    
     else if (opcao == 0){
         printf("\nNúmero nulo.\n");
@@ -15,6 +21,5 @@ int main (){
     }
     else{
         printf("\nNúmero negativo!\n");
-    }
-    
+    }   
 }
