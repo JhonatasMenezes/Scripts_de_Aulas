@@ -7,6 +7,9 @@ const marcas = [
 ];
 const myrray = ['Jhonatas', 24, '12/02/1997'];
 const numeros = [1,2,3,4,5,6];
+const primeiro = [1,2,3,4];
+const segundo = [5,6,7,8];
+const frase = ('Olá! Bem vindo ao Javascript!');
 
 
 // Add elementos
@@ -59,14 +62,30 @@ console.log(remPrm);
 console.log(remUlt);
 console.log(remMei);
 console.log(numeros);
+// remover tudo do array
+let test = numeros;
+numeros.length = 0;
+console.log(numeros);
+console.log(test);
 
 
+// Combinar e Dividir Arrays
+const combinado = primeiro.concat(segundo);
+console.log(combinado);
+const dividio = combinado.slice(1,4);
+console.log(dividio);
+const combinado2 = [...combinado,...dividio];
+console.log(combinado2);
+const combinado3 = [...combinado,'##',...dividio,'##'];
+console.log(combinado3);
+const clonado = [...combinado3];
+console.log(clonado);
+const unirPontos = combinado2.join('.');
+console.log(unirPontos);
+const separador = frase.split(' ');
+console.log(separador);
 
-// Dividir Elementos
 
-
-// Dividir Arrays
-
-
-// Combinar Arrays
+// foreach
+combinado3.forEach((numero,indice) => console.log(numero,indice));
 
