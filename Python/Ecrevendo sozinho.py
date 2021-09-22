@@ -1,11 +1,10 @@
 #import libs
 import time
-import sys
  #function whe write alone
 def writeAlone(message):
     for letter in message:
-        sys.stdout.write(letter)
-        time.sleep(0.5)
+        print(letter,end='')
+        time.sleep(0.4)
 
 #call function
 msg = 'Helo World'
