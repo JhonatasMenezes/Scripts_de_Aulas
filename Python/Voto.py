@@ -3,6 +3,7 @@ def voto(num=int):
     Função que informa se a pessoa não vota,
     se tem voto opcional ou voto obrigatório.
     :param num: ano de nascimento
+    :return: Uma mensagem informando a situação.
     """
     
     final = ''
