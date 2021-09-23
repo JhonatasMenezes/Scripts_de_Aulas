@@ -1,6 +1,6 @@
 import os
 import sys
-from operator import itemgetter
+
 
 jogadores = []
 aux = {}
@@ -10,6 +10,7 @@ os.system('cls')
 print('='*30)
 print('ESTATÍSTICAS DE JOGADORES'.center(30))
 print('='*30)
+
 
 while True:
     totGols = 0
