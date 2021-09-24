@@ -1,10 +1,8 @@
-from Módulos import moeda, util_programas
+from Modulos import moeda, utilidades
 
-util_programas.mensagemComLinhas('ANÁLISE DE VALLOR')
-preco = float(input('Digite o preço: '))
-print(moeda.metade(preco, mensagem=True))
-print(moeda.dobro(preco, mensagem=True))
-print(moeda.aumentar(preco, 10, mensagem=True))
-print(moeda.diminuir(preco, porcentagem=12, mensagem=True))
-util_programas.linhaUnica(25)
-print('FIM DA EXECUÇÃO'.center(25))
+utilidades.mensagemComLinhas('PROGRAMA DE ANÁLISE', inicio=True)
+valor = utilidades.validaValorNumerico('Digite um valor: ')
+porcMais = float(input(r'Quantos % você deseja calcular a mais: '))
+porcMenos = float(input('E quantos % voce deseja calcular a menos: '))
+
+moeda.resumo(valor, porcMais, porcMenos, 'U$')
