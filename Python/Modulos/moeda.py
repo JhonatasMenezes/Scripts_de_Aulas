@@ -1,3 +1,5 @@
+import os
+
 def dobro(num, mensagem=False):
     """
     Dobra um número.
@@ -51,4 +53,33 @@ def diminuir(num, porcentagem=100, mensagem=False):
         return retorno
     else: 
         return num - ((num/100)*porcentagem)
+    
+def resumo(num, porcentagemMais, porcentagemMenos, moeda=' '):
+    """
+    Resume de forma completa todas as funcionalidades
+    prsentes neste módulo, mostrando, de maneira
+    formatada, todos os valores resultantes.
+    
+    :param num: um valor a ser analisado
+    :param porcentagemMais: porcentagem a ser acrescentada na funcao aumentar()
+    :param porcentagemMenos: porcentagem a ser subtraída na funcao diminuir()
+    """
+    dob = dobro(num)
+    met = metade(num)
+    aum = aumentar(num, porcentagemMais)
+    dim = diminuir(num, porcentagemMenos)
+    
+    os.system('cls')
+    print('-'*30)
+    print('ANÁLISE DO VALOR'.center(30))
+    print('-'*30)
+    print('Valor analisado:'.ljust(20),f'{moeda} {num:.2f}')
+    print('Valor dobrado:'.ljust(20),f'{moeda} {dob:.2f}')
+    print('Valor pela metade:'.ljust(20),f'{moeda} {met:.2f}')
+    print(f'Valor + {porcentagemMais}% :'.ljust(20),f'{moeda} {aum:.2f}')
+    print(f'Valor - {porcentagemMenos}%:'.ljust(20),f'{moeda} {dim:.2f}')
+    print('-'*30)
+    print('FIM DA EXECUÇÃO'.center(30))
+    print('-'*30)
+    
     
